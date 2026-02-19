@@ -3,9 +3,13 @@ padding-top: 80px;
 
 }
 
+.custom-gradient-darkblue { 
+  background: linear-gradient(90deg, #000000, #0d6efd); 
+}
+
 div h1 {
 font-style: oblique;
-  color: #010101;
+  color: #eaeaea;
   
 }
 
