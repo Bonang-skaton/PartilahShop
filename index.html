@@ -18,13 +18,14 @@
    
 
     <!--MENU-->
-    <nav class="d-md-flex p-4">
+    <nav class="d-md-flex p-4 fixed-top ">
    <div><h1>Partilah<span>Shop</span></h1></div>
    <div class="ms-auto my-auto">
     <ul class="list-inline m-0">
       <li class="list-inline-item mx-md-3"><a href="#product" class="text-decoration-none text-dark fw-bold">Produk Kami</a></li>
-      <li class="list-inline-item mx-md-3"><a href="#about" class="text-decoration-none text-dark fw-bold">Payment</a></li>
-      <li class="list-inline-item mx-md-3"><a href="#order" class="text-decoration-none text-dark fw-bold">How to order</a></li>
+      <li class="list-inline-item mx-md-3"><a href="#about" class="text-decoration-none text-dark
+        fw-bold">Payment</a></li>
+      <li class="list-inline-item mx-md-3"><a href="#order" class="text-decoration-none text-dark fw-bold">Cara bayar</a></li>
     </ul>
    </div>
  </nav>
@@ -202,8 +203,7 @@
    </div>
    </div>
 
-  
-<div class="col mb-3">
+  <div class="col mb-3">
     <div class="card shadow" >
   <img src="images/bergo kaos.png" class="card-img-top" alt="...">
   <div class="card-body">
@@ -239,7 +239,23 @@
    </div>
    </div> 
 
- 
+ <div class="col mb-3">
+    <div class="card shadow" >
+  <img src="images/peci awing.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><span class="modalNama">Peci Awing</span></h5>
+    <p class="card-text">Size: No. 5-10 /pcs.</p>
+   <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+  </div>
+  <div class="d-none deskripsi"><p>Songkok Awing Hitam AC Original dengan tinggi, 8 9 10 11 12.Peci Bludru halus Size: No. 5-10. lampirkan ukuran yang dipesan</p>
+</div>
+  <div class="card-footer d-md-flex">
+      <a class="btn btn-sm btn-primary d-block btnDetail ">detail</a>
+      <span class="ms-auto text-danger fw-bold d-block text-center harga">Rp. 120.000,-
+</span>
+   </div>
+   </div>
+   </div> 
 
 
 
@@ -280,7 +296,7 @@
   </ol>
 
   <!-- Video petunjuk pembayaran (file lokal) -->
-  <div class="payment-video mb-3">
+  <div class="payment-video mb-3" id="order">
     <video width="100%" height="75%" controls>
       <source src="petunjuk-pembayaran.mp4" type="video/mp4">
   
