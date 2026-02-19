@@ -8,7 +8,7 @@ document.querySelectorAll('.btnDetail').forEach(item => {
     let judul = parent.querySelector('.modalNama').textContent.trim();
     let deskripsi = parent.querySelector('.deskripsi') 
       ? parent.querySelector('.deskripsi').innerHTML 
-      : '<i>tidak tersedia</i>';
+      : '';
     let quantitySelect = document.querySelector('#quantity'); // ambil dari modal
 
     // Tampilkan modal
