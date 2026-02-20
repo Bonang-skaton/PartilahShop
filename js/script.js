@@ -135,3 +135,21 @@ document.querySelectorAll('.btnDetail').forEach(item => {
     });
   });
 });
+
+// FITUR PENCARIAN STATIS
+document.querySelector('#searchInput').addEventListener('keyup', function (e) {
+  let searchText = e.target.value.toLowerCase();
+  let allCards = document.querySelectorAll('#productList .col'); // Menargetkan pembungkus kolom produk
+
+  allCards.forEach(card => {
+    // Ambil nama produk dari elemen .modalNama
+    let productName = card.querySelector('.modalNama').textContent.toLowerCase();
+    
+    // Jika nama produk mengandung teks pencarian, tampilkan. Jika tidak, sembunyikan.
+    if (productName.includes(searchText)) {
+      card.style.display = ""; // Tampilkan (default)
+    } else {
+      card.style.display = "none"; // Sembunyikan
+    }
+  });
+});
