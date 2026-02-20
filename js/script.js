@@ -47,17 +47,20 @@ document.querySelectorAll('.btnDetail').forEach(item => {
       const phoneInput = document.querySelector('#phone');
       const addressInput = document.querySelector('#address');
       const noteInput = document.querySelector('#note');
+      
 
       const nama = namaInput.value.trim();
       const phone = phoneInput.value.trim();
       const address = addressInput.value.trim();
       const note = noteInput.value.trim();
+     
 
       // Reset error
       document.querySelector('#errorName').textContent = '';
       document.querySelector('#errorPhone').textContent = '';
       document.querySelector('#errorAddress').textContent = '';
       document.querySelector('#errorNote').textContent = '';
+     
       [namaInput, phoneInput, addressInput, noteInput].forEach(el => el.classList.remove('input-error'));
 
       let valid = true;
@@ -100,6 +103,7 @@ document.querySelectorAll('.btnDetail').forEach(item => {
         firstErrorField = firstErrorField || noteInput;
         valid = false;
       }
+
 
       // Fokus ke field pertama yang error
       if (!valid) {
