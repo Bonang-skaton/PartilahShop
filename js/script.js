@@ -127,7 +127,7 @@ document.querySelectorAll('.btnDetail').forEach(item => {
         pesanText += `%0A%0ACatatan   : ${note}`;
       }
 
-      const nohp = '+628568084552';
+      const nohp = '+6285778080060';
       const pesan = `https://api.whatsapp.com/send?phone=${nohp}&text=${pesanText}`;
 
       this.href = pesan;
