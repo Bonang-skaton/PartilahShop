@@ -36,6 +36,9 @@ input#name.form-control {
   margin: 0.5rem 0 1%;
 } 
 
+button.btn.btn-warning.position-fixed.bottom-0.end-0.m-4.shadow-lg.rounded-pill.p-3 {
+  z-index: 9999;
+}
 
 
 

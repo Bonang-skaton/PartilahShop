@@ -35,9 +35,39 @@
     </ul>
    </div>
  </nav>
+<!-- untuk keranjang belanja start -->
+
+<button class="btn btn-warning position-fixed bottom-0 end-0 m-4 shadow-lg rounded-pill p-3"  data-bs-toggle="modal" data-bs-target="#cartModal">
+  <i data-feather="shopping-cart"></i> 
+  <span id="cartCount" class="badge bg-danger rounded-pill">0</span>
+</button>
+
+<div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Keranjang Belanja Anda</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div id="cartItemsList">
+          </div>
+        <hr>
+        <div class="d-flex justify-content-between fw-bold fs-5">
+          <span>Total Bayar:</span>
+          <span id="cartTotalPrice" class="text-success">Rp. 0,-</span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tambah Barang Lagi</button>
+        <button type="button" class="btn btn-success" id="checkoutWA">Kirim ke WhatsApp</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-
+<!-- untuk keranjang belanja end-->
 
 <!--BANNER-->
 <div class="px-3 mb-3">
