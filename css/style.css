@@ -48,7 +48,7 @@ input#name.form-control {
   margin: 0.5rem 0 1%;
 } 
 
-  button.btn.btn-warning.position-fixed.bottom-0.start-0.m-4.shadow-lg.rounded-pill.p-3 {
+  button.btn.btn-warning.position-fixed.bottom-0.start-0.m-4.shadow-lg.rounded-pill.p-1 {
   z-index: 9999;
 } 
 
@@ -60,4 +60,42 @@ nav h1 {
   color: #eaeaea;
 }
 
+/* icon whatsapp */
+.whatsapp-float {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  bottom: 100px; /* Jarak dari bawah, diatur agar di atas tombol keranjang/menu */
+  right: 2rem;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 35px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  z-index: 9999; /* Agar selalu di posisi paling depan */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  bottom: 1.5rem;
+  animation: ring 1.5s infinite ease-in-out;
+}
 
+@keyframes ring {
+  0% { transform: rotate(0); }
+  10% { transform: rotate(30deg); }
+  20% { transform: rotate(-30deg); }
+  30% { transform: rotate(20deg); }
+  40% { transform: rotate(-20deg); }
+  50% { transform: rotate(14deg); }
+  60% { transform: rotate(-14deg); }
+  100% { transform: rotate(0); }
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e;
+  color: #FFF;
+  transform: scale(1.1);
+}
