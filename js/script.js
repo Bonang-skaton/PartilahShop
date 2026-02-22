@@ -39,8 +39,8 @@ function updateCartUI() {
     // Hitung Ongkir (Ambil angka saja dari value select)
     let ongkir = 0;
     if (shippingSelect && cart.length > 0) {
-        // Logika: JNE=8500, J&T=9000, Sicepat=7000 (disesuaikan dengan HTML)
-        const shippingPrices = { "JNE": 10000, "J&T": 10000, "Sicepat": 7000, "Wahana": 7000, "Lion parcel": 7000 };
+        // Logika: JNE=10000, J&T=9000,  (disesuaikan dengan HTML)
+        const shippingPrices = { "REGULER": 10000, "EKONOMI": 6000, };
         ongkir = shippingPrices[shippingSelect.value] || 0;
     }
 
