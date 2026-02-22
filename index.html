@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Partilahshop</title>
+    <title>PartilahShop</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,9 +14,8 @@
        <!-- feather icon -->
         <script src="https://unpkg.com/feather-icons"></script>
 
-  <meta name="google-site-verification" content="MeOLbgABUZ8DFnRpXjy90nY0B1oJkvP89q9HNLGaGbI" />
+  
 
-    
 
 
   </head>
@@ -36,9 +35,9 @@
     </ul>
    </div>
  </nav>
-<!-- untuk keranjang belanja start -->
 
-<button class="btn btn-warning position-fixed bottom-0 end-0 m-4 shadow-lg rounded-pill p-3"  data-bs-toggle="modal" data-bs-target="#cartModal">
+ <!-- untuk keranjang belanja start -->
+<button class="btn btn-warning position-fixed bottom-0 start-0 m-4 shadow-lg rounded-pill p-3" data-bs-toggle="modal" data-bs-target="#cartModal">
   <i data-feather="shopping-cart"></i> 
   <span id="cartCount" class="badge bg-danger rounded-pill">0</span>
 </button>
@@ -53,12 +52,43 @@
       <div class="modal-body">
         <div id="cartItemsList">
           </div>
+          <!-- kurir start -->
+ <div class="form-group mb-4">
+  <label for="shipping" class="form-label" >Jasa Pengiriman JABODETABEK</label>
+  <select id="shipping" class="form-select">
+    <option value="empty"></option>
+    <option value="JNE">JNE (Reguler/YES) - Rp. 10.000</option>
+    <option value="J&T">J&T  - Rp. 10.000</option>
+    <option value="Sicepat">Wahana - Rp. 7.000</option>
+      <option value="Sicepat">Lion parcel - Rp. 7.000</option>
+  </select>
+</div>
+<!-- kurir end -->
         <hr>
         <div class="d-flex justify-content-between fw-bold fs-5">
           <span>Total Bayar:</span>
           <span id="cartTotalPrice" class="text-success">Rp. 0,-</span>
         </div>
       </div>
+
+       <div class="form-group">
+  <label for="name"></label>
+  <input type="text" id="name" class="form-control" placeholder="Nama Lengkap">
+  <small class="error" id="errorName"></small>
+</div>
+
+<div class="form-group">
+  <label for="phone"></label>
+  <input type="number" id="phone" class="form-control" placeholder="No.Hp">
+  <small class="error" id="errorPhone"></small>
+</div>
+
+<div class="form-group">
+  <label for="address"></label>
+  <textarea id="address" class="form-control" placeholder="Alamat Lengkap"></textarea>
+  <small class="error" id="errorAddress"></small>
+</div>
+
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tambah Barang Lagi</button>
         <button type="button" class="btn btn-success" id="checkoutWA">Beli sekarang</button>
@@ -66,9 +96,9 @@
     </div>
   </div>
 </div>
+<!-- untuk kerajang  belanja end-->
 
 
-<!-- untuk keranjang belanja end-->
 
 <!--BANNER-->
 <div class="px-3 mb-3">
@@ -107,7 +137,7 @@
     <p class="card-text"> 1pcs.</p>
    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
-  <div class="d-none deskripsi"><p>Sarung Wadimor bahan halus, motif batik Jawa.</p>
+  <div class="d-none deskripsi"><p>Sarung Wadimor Bahan halus, motif batik jawa.</p>
 </div>
   <div class="card-footer d-md-flex">
       <a class="btn btn-sm btn-primary d-block btnDetail ">detail</a>
@@ -147,7 +177,7 @@
    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->   
   </div>
 
-<div class="d-none deskripsi"><p>Bergo Kaos berbahan lembut tidak mudah kusut nyaman dipakai Size: S</p></div>
+<div class="d-none deskripsi"><p>Bergo kaos berbahan lembut tidak mudah kusut nyaman dipakai Size: S</p></div>
 
   <div class="card-footer d-md-flex">
       <a class="btn btn-sm btn-primary d-block btnDetail ">detail</a>
@@ -199,7 +229,7 @@
     <p class="card-text">1pcs.</p>
    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
-    <div class="d-none deskripsi"><p>Sajadah tebal lembut anti slip ukuran midi 50x105 cm</p></div>
+    <div class="d-none deskripsi"><p>Sajadah tebal lembut anti slip ukuran midi 50x105</p></div>
   <div class="card-footer d-md-flex">
       <a class="btn btn-sm btn-primary d-block btnDetail ">detail</a>
       <span class="ms-auto text-danger fw-bold d-block text-center harga">Rp. 90.000,-</span>
@@ -212,7 +242,7 @@
     <div class="card shadow" >
   <img src="images/bergo kaos.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title"><span class="modalNama"> Jilbab Bergo Kaos</span></h5>
+    <h5 class="card-title"><span class="modalNama"> Jilbab Bergo kaos</span></h5>
     <p class="card-text">Size: XL /pcs.</p>
    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
@@ -235,7 +265,7 @@
     <p class="card-text">1pcs.</p>
    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
-  <div class="d-none deskripsi"><p>Sajadah tebal lembut anti slip ukuran midi 50x105 cm</p></div>
+  <div class="d-none deskripsi"><p>Sajadah tebal lembut anti slip ukuran midi 50x105</p></div>
   <div class="card-footer d-md-flex">
       <a class="btn btn-sm btn-primary d-block btnDetail ">detail</a>
       <span class="ms-auto text-danger fw-bold d-block text-center harga">Rp. 65.000,-</span>
@@ -265,7 +295,7 @@
     <div class="card shadow" >
   <img src="images/bergo kaos.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title"><span class="modalNama">Jilbab Bergo Kaos</span></h5>
+    <h5 class="card-title"><span class="modalNama">Jilbab Bergo kaos</span></h5>
     <p class="card-text">Size: M /pcs.</p>
    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
@@ -284,7 +314,7 @@
     <div class="card shadow" >
   <img src="images/bergo kaos.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title"><span class="modalNama">Jilbab Bergo Kaos</span></h5>
+    <h5 class="card-title"><span class="modalNama">Jilbab Bergo kaos</span></h5>
     <p class="card-text">Size: L /pcs.</p>
    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
@@ -435,7 +465,7 @@
    </div>
    </div>
 
-<!-- minyak herba sinergi -->
+   <!-- minyak herba sinergi -->
 <div class="col mb-3">
     <div class="card shadow" >
   <img src="images/minyak herba sinergi.png" class="card-img-top" alt="...">
@@ -459,7 +489,6 @@
    </div>
    </div>
    </div>
-
 
 
    </div>
@@ -537,23 +566,9 @@
         <div class="col-md-6 col-12">
           <div class="modalDeskripsi"></div>
 
-       <div class="form-group">
-  <label for="name"></label>
-  <input type="text" id="name" class="form-control" placeholder="Nama Lengkap">
-  <small class="error" id="errorName"></small>
-</div>
 
-<div class="form-group">
-  <label for="phone"></label>
-  <input type="number" id="phone" class="form-control" placeholder="No.Hp">
-  <small class="error" id="errorPhone"></small>
-</div>
 
-<div class="form-group">
-  <label for="address"></label>
-  <textarea id="address" class="form-control" placeholder="Alamat Lengkap Pengiriman"></textarea>
-  <small class="error" id="errorAddress"></small>
-</div>
+
 
 <div class="mb-3">
             <label for="quantity" class="form-label">Quantity</label>
@@ -632,4 +647,3 @@
 
   </body>
 </html>
-<!--49:43-->
