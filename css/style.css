@@ -48,8 +48,9 @@ input#name.form-control {
   margin: 0.5rem 0 1%;
 } 
 
-  button.btn.btn-warning.position-fixed.bottom-0.start-0.m-4.shadow-lg.rounded-pill.p-1 {
+  button.btn.btn-warning.position-fixed.top-0.end-0.m-4.shadow-lg.rounded-pill.p-1.cart-animated {
   z-index: 9999;
+  margin-top: 80px !important;
 } 
 
 label.form-label {
@@ -98,4 +99,24 @@ nav h1 {
   background-color: #128c7e;
   color: #FFF;
   transform: scale(1.1);
+}
+
+
+
+
+@keyframes cartMove {
+  0% { transform: translateX(0); }         /* Posisi awal */
+  50% { transform: translateX(20px); }    /* Maju ke kanan (keluar layar sedikit) */
+  100% { transform: translateX(0); }       /* Kembali ke posisi semula */
+}
+
+/* Class khusus untuk tombol keranjang */
+.cart-animated {
+  animation: cartMove 2s infinite ease-in-out;
+  /* Tambahkan transisi agar pergerakan halus */
+  transition: all 0.3s ease;
+}
+
+.cart-animated:hover {
+  animation-play-state: paused;
 }
