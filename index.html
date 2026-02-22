@@ -23,18 +23,21 @@
    <div class="container p-0 mb-4 mt-4 rounded-3 shadow bg-white">
    
 
-    <!--MENU-->
-    <nav class="d-md-flex p-4 fixed-top ">
-   <div><h1>Partilah<span>Shop</span></h1></div>
+    <!--MENU NAVBAR START-->
+    <nav class="d-md-flex p-2 fixed-top  bg-dark">
+   <div><h1 >Partilah<span>Shop</span></h1></div>
    <div class="ms-auto my-auto">
     <ul class="list-inline m-0">
-      <li class="list-inline-item mx-md-3"><a href="#product" class="text-decoration-none text-blue  fw-bold">Produk Kami</a></li>
+      <li class="list-inline-item mx-md-3"><a href="#home" class="text-decoration-none text-blue  fw-bold">Beranda</a></li>
+      <li class="list-inline-item mx-md-3"><a href="#product" class="text-decoration-none text-blue  fw-bold">Produk</a></li>
       <li class="list-inline-item mx-md-3"><a href="#about" class="text-decoration-none text-blue
-        fw-bold">Payment</a></li>
+        fw-bold">Pembayaran</a></li>
       <li class="list-inline-item mx-md-3"><a href="#order" class="text-decoration-none text-blue  fw-bold">Cara bayar</a></li>
     </ul>
    </div>
  </nav>
+<!--MENU NAVBAR END-->
+
 
  <!-- untuk keranjang belanja start -->
 <button class="btn btn-warning position-fixed bottom-0 start-0 m-4 shadow-lg rounded-pill p-3" data-bs-toggle="modal" data-bs-target="#cartModal">
@@ -101,7 +104,7 @@
 
 
 <!--BANNER-->
-<div class="px-3 mb-3">
+<div class="px-3 mb-3 "  id="home">
 <img src="images/hero/toko.jpg" alt="" class="w-100 rounded-3" />
 <h1 class="my-profession">Selamat <span id="element"></span></h1>
 </div>
@@ -110,12 +113,12 @@
  
 <h3 class="text-center" id="product">Produk Kami </h3>
 <div class="text-center w-50 mx-auto fw-light">PartilahShop, Menyediakan busana muslim dan Herbal pilihan</div>
-
+<!-- tombol & colom input Search start -->
    <div class="container mt-4 mb-3">
   <div class="row justify-content-center">
     <div class="col-md-6">
       <div class="input-group">
-        <span class="input-group-text bg-white border-end-0">
+        <span class="input-group-text bg-white border-eng-0">
           <i data-feather="search"></i>
         </span>
         <input type="text" id="searchInput" class="form-control border-start-0" placeholder="Cari produk (contoh: Sarung, Peci, Susu)...">
@@ -123,6 +126,7 @@
     </div>
   </div>
 </div>
+<!-- tombol & colom input Search end -->
 
 <!-- <div class="row row-cols-md-3 row-cols-2 gx-3 p-3"> -->
 <div class="row row-cols-md-3 row-cols-2 gx-2 p-1" id="productList"> 
